@@ -1,0 +1,19 @@
+name: PingPlugin
+version: ${project.version}
+main: me.pingplugin.PingPlugin
+api-version: "1.21"
+description: Shows your ping or another player's ping.
+
+commands:
+  ping:
+    description: Shows your ping, or another player's ping.
+    usage: /ping [player]
+    permission: pingplugin.ping
+
+permissions:
+  pingplugin.ping:
+    description: Allows use of /ping
+    default: true
+  pingplugin.ping.others:
+    description: Allows checking other players' ping with /ping <player>
+    default: true
